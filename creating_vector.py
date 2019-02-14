@@ -20,7 +20,7 @@ with open("features_raw.csv") as f:
 for i in chan:
 	x = np.array(columns[i]).astype(np.float)
 	coeffs = pywt.wavedec(x, 'db4', level=6)
-	cA4, cD6, cD5,cD4,cD3,cD2,cD1 = coeffs
+	cA6, cD6, cD5,cD4,cD3,cD2,cD1 = coeffs
 	cD5 = np.std(cD5)
 	cD4 = np.std(cD4)
 	cD3 = np.std(cD3)
